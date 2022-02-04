@@ -12,16 +12,24 @@ function Home (){
         if (type === "website"){
             setTxt(
                 <>
-                    <h6 class="card-subtitle mb-2 text-muted">Personal Project</h6>
-                    <p class="card-text">A website with all of my personal information.</p>
+                    <h6 className="card-subtitle mb-2 text-muted">Personal Project</h6>
+                    <p className="card-text">A website with all of my personal information.</p>
                 </>
             );
         }
         if (type === "app"){
             setTxt(
                 <>
-                    <h6 class="card-subtitle mb-2 text-muted">ChefUp!</h6>
-                    <p class="card-text">A website with all of my personal information.</p>
+                    <h6 className="card-subtitle mb-2 text-muted">ChefUp!</h6>
+                    <p className="card-text">A website with all of my personal information.</p>
+                </>
+            );
+        }
+        if (type === "recycle"){
+            setTxt(
+                <>
+                    <h6 className="card-subtitle mb-2 text-muted">ChefUp!</h6>
+                    <p className="card-text">A website with all of my personal information.</p>
                 </>
             );
         }
@@ -64,11 +72,22 @@ function Home (){
                             onMouseLeave={() => mouseExit()}//</div></div>setOpen1(false)} 
                             onClick={(e) => {
                                 e.preventDefault();
-                                window.location.href='https://github.com/lizfrey/personal-website';
+                                window.location.href='https://github.com/lizfrey/chef-up';
                             }}
                             aria-controls="example-collapse-text" aria-expanded={open}>
                             ChefUp!
                         </Button>
+                    </div>
+                    <div class="col-4">
+                        <Button variant="outline-secondary" onMouseEnter={() => mouseEnter("recycle")}//setOpen1(true)} 
+                                onMouseLeave={() => mouseExit()}//</div></div>setOpen1(false)} 
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href='https://github.com/recycle-app/recycle-app';
+                                }}
+                                aria-controls="example-collapse-text" aria-expanded={open}>
+                            Recycle App
+                        </Button> 
                     </div>
 
                     <br></br>
@@ -77,11 +96,10 @@ function Home (){
                 <div id="collapse-text">
                     <div>
                         <Fade in={open} dimension="width">
-                            <Card body style={{width: '20%'}}>
+                            <Card body style={{width: '100%'}}>
                                 {txt}
                             </Card>
                         </Fade>
-
                     </div>
                 </div>
             </div>
