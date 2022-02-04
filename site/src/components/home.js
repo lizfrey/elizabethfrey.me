@@ -47,25 +47,33 @@ function Home (){
             </div>
             <div className = "section">
                 <h2>Projects</h2>
-                <Button onMouseEnter={() => mouseEnter("website")}//setOpen1(true)} 
-                        onMouseLeave={() => mouseExit()}//</div></div>setOpen1(false)} 
-                        onClick={(e) => {
-                            e.preventDefault();
-                            window.location.href='https://github.com/lizfrey/personal-website';
-                        }}
-                        aria-controls="example-collapse-text" aria-expanded={open}>
-                    Personal Website Project
-                </Button> 
+                <div class="row">
+                    <div class="col-4">
+                        <Button variant="outline-secondary" onMouseEnter={() => mouseEnter("website")}//setOpen1(true)} 
+                                onMouseLeave={() => mouseExit()}//</div></div>setOpen1(false)} 
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href='https://github.com/lizfrey/personal-website';
+                                }}
+                                aria-controls="example-collapse-text" aria-expanded={open}>
+                            Personal Website Project
+                        </Button> 
+                    </div>
+                    <div class = "col-4">
+                        <Button variant="outline-secondary" onMouseEnter={() => mouseEnter("app")}//setOpen1(true)} 
+                            onMouseLeave={() => mouseExit()}//</div></div>setOpen1(false)} 
+                            onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href='https://github.com/lizfrey/personal-website';
+                            }}
+                            aria-controls="example-collapse-text" aria-expanded={open}>
+                            ChefUp!
+                        </Button>
+                    </div>
 
-                <Button onMouseEnter={() => mouseEnter("app")}//setOpen1(true)} 
-                        onMouseLeave={() => mouseExit()}//</div></div>setOpen1(false)} 
-                        onClick={(e) => {
-                            e.preventDefault();
-                            window.location.href='https://github.com/lizfrey/personal-website';
-                        }}
-                        aria-controls="example-collapse-text" aria-expanded={open}>
-                    ChefUp!
-                </Button>
+                    <br></br>
+                </div>
+
                 <div id="collapse-text">
                     <div>
                         <Fade in={open} dimension="width">
