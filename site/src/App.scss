@@ -19,6 +19,7 @@ body {
 }
  
 h1 {
+    transition: 0.9s;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -53,7 +54,40 @@ form {
 
 .name {
     text-align: center;
-    font-size: 100px;
+    h1 {
+        padding: 20px;
+        font-size: 100px;
+    }
+}
+
+.section {
+    padding: 20px;
+    transition: 1s;
+    color:#E0E0E0;
+
+    h2 {
+        font-size: 50px;
+    }
+
+}
+
+.section:hover{
+    color:#4f5a64;
+    transition: .8s;
+}
+
+#collapse-text{
+    min-height: 150px;
+    align-items: center;
+    align-content: center;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    border: 0;
+    padding: 20px;
 }
 
 /*********************************************/
@@ -90,6 +124,7 @@ footer p {
     color: transparent;
     -webkit-background-clip: text;
     -moz-background-clip: text;
+    bottom: 10px;
 }
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
