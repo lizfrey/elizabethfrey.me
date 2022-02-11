@@ -3,16 +3,22 @@ import {Carousel} from 'react-bootstrap'
 import chefup from '../extras/chefup.png'
 import spacelab from '../extras/spacelab.png'
 import dartup from '../extras/dartup.png'
+import personal from "../extras/picture.JPG"
  
 
 function About () {
     return <div className = "about">
-        <h1>Hello</h1>
-        <p>My name is Elizabeth Frey, and I am a sophomore at Dartmouth College studying Computer Science and Neuroscience.
-        </p>
-        <p>I am a Singapore PR and a United States citizen. I am passionate about mental health, and I enjoy traveling and trying new foods.</p>
-        <p>I was born in Berkely, CA, USA, but grew up in Singapore, an incredibly diverse place. I love working with people from all over the world.</p>
-        <h2>Things I've Been Involved In In the News</h2>
+        <div>
+            <h1>Hello!</h1>
+            <img src={personal} id = "professional-image"/>
+            <p>My name is Elizabeth Frey, and I am a sophomore at Dartmouth College studying Computer Science and Neuroscience.
+            </p>
+            <p>I am a Singapore PR and a United States citizen. I am passionate about mental health, and I enjoy traveling and trying new foods.</p>
+            <p>I was born in Berekely, CA, USA, but grew up in Singapore, an incredibly diverse place. I love working with people from all over the world.</p>
+        </div>
+        <br></br>
+        <h2>My Projects in the News</h2>
+
         <div id="involve">
             <Carousel>
                 <Carousel.Item>
