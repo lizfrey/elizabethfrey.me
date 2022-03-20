@@ -10,7 +10,7 @@ function About () {
     return <div className = "about">
         <div>
             <h1>Hello!</h1>
-            <img src={personal} id = "professional-image"/>
+            <img src={personal} id = "professional-image" alt="personal"/>
             <p>My name is Elizabeth Frey, and I am a sophomore at Dartmouth College studying Computer Science and Neuroscience.
             </p>
             <p>I am a Singapore PR and a United States citizen. I am passionate about mental health, and I enjoy traveling and trying new foods.</p>

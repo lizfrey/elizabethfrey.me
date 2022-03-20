@@ -39,6 +39,39 @@ function Home (){
                 </>
             );
         }
+        if (type === "dropbox"){
+            setTxt(
+                <>
+                    <h6 className="card-subtitle mb-2 text-muted">P2P File Sharing</h6>
+                    <p className="card-text">The P2P File Sharing program was my final group project for my Computer Networks class.
+                    I coded the mini-reliable transport layer using UDP sockets in addition to the multi-threading reqiured for the
+                    simultaneous upload and download.</p>
+                </>
+            );
+        }
+
+        if (type === "nuggets"){
+            setTxt(
+                <>
+                    <h6 className="card-subtitle mb-2 text-muted">Gold-Collecting Game</h6>
+                    <p className="card-text">The Gold-Collecting "Nuggets" game was my final group project for my Software Design and Implementation course.
+                    I was involved largely in the Player and Gameboard modules. Through this project, I learned about agile methods (scrum),
+                    document specifications, and various forms of testing (fuzz, unit).</p>
+                </>
+            );
+        }
+
+        if (type === "sudi"){
+            setTxt(
+                <>
+                    <h6 className="card-subtitle mb-2 text-muted">POS Tagging</h6>
+                    <p className="card-text">The parts of speech machine learning was my final partner project for my OOP course in Java.
+                    I personally coded the training aspect of the program while my partner focused on the Viterbi code. This project uses
+                    Markov chains and ML to learn from a tagged-document and accurately (86% on longest test file) tag each word with its
+                    part of speech in the testing file.</p>
+                </>
+            );
+        }
         setOpen(true);
     }
 
@@ -55,7 +88,7 @@ function Home (){
                 <p className="courses">
                     Problem Solving via. Object Oriented Programming • Software Design and Implementation • Foundations of Applied Computer Science
                 </p>
-                <p className = "courses"> Computer Networks • Discrete Math for Computer Science </p>
+                <p className = "courses"> Computer Networks • Discrete Math for Computer Science • Full Stack Web Development</p>
                 <p className = "courses"> Introduction to Neuroscience • Experimental Design and Methodology </p>
                     
             </div>
@@ -95,7 +128,43 @@ function Home (){
                             Recycle App
                         </Button> 
                     </div>
-
+                    <br></br>
+                    
+                </div>
+                <div className="row">
+                    <div className="col-4">
+                        <Button variant="outline-secondary" onMouseEnter={() => mouseEnter("dropbox")}//setOpen1(true)} 
+                                onMouseLeave={() => mouseExit()}//</div></div>setOpen1(false)} 
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href='https://drive.google.com/drive/u/0/folders/1QTXHu2zoCeT1OaP-MqIziag-_PkM7Ecm';
+                                }}
+                                aria-controls="example-collapse-text" aria-expanded={open}>
+                            P2P File Sharing
+                        </Button> 
+                    </div>
+                    <div class = "col-4">
+                        <Button variant="outline-secondary" onMouseEnter={() => mouseEnter("nuggets")}//setOpen1(true)} 
+                            onMouseLeave={() => mouseExit()}//</div></div>setOpen1(false)} 
+                            onClick={(e) => {
+                                e.preventDefault();
+                                window.location.href='https://drive.google.com/drive/u/0/folders/1DSHO1DTSurqIhs1QpG2li7eCHbDv9pWj';
+                            }}
+                            aria-controls="example-collapse-text" aria-expanded={open}>
+                            Gold-Collecting Game
+                        </Button>
+                    </div>
+                    <div className="col-4">
+                        <Button variant="outline-secondary" onMouseEnter={() => mouseEnter("sudi")}//setOpen1(true)} 
+                                onMouseLeave={() => mouseExit()}//</div></div>setOpen1(false)} 
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    window.location.href='https://drive.google.com/drive/u/0/folders/1X11AzRcu_wMUE-3lmRbSaA__MRGHJT0v';
+                                }}
+                                aria-controls="example-collapse-text" aria-expanded={open}>
+                            NLP Parts of Speech Program
+                        </Button> 
+                    </div>
                     <br></br>
                 </div>
 
@@ -112,10 +181,13 @@ function Home (){
             <div className = "section">
                 <h2>Experience</h2>
                 <p>
-                    Undergraduate researcher under Alireza Soltani for the Computational and Cognitive Neuroscience Lab.
+                    Software Developer for the Digital Applied Learning and Innovation (DALI) Lab
+                </p>
+                <p>
+                    Undergraduate researcher (mainly SWE tasks) under Alireza Soltani for the Computational and Cognitive Neuroscience Lab
                 </p>
                 <p> 
-                    Teaching assistant for Problem Solving via. Object Oriented Programming
+                    Teaching assistant for Problem Solving via Object Oriented Programming
                 </p>
                 <p> 
                     Intern for the N.1 Institute for Health
