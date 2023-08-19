@@ -1,0 +1,40 @@
+{
+  "name": "elizabethfrey.me",
+  "version": "1.0.0",
+  "description": "This is my personal website!",
+  "main": "src/index.tsx",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint --ext .tsx src --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.61.0",
+    "@typescript-eslint/parser": "^5.61.0",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.44.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "sass": "^1.63.6",
+    "vite": "^4.3.9",
+    "vite-plugin-eslint": "^1.8.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.0.1",
+    "axios": "^1.4.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "lodash.debounce": "^4.0.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.14.1",
+    "typescript": "^5.1.6"
+  }
+}
